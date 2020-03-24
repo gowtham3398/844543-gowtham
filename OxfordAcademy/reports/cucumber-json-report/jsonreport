@@ -1,0 +1,544 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registering into Oxford Academy",
+        "description": "",
+        "id": "oxford-academy-website;registering-into-oxford-academy",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16993767736,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch the Chrome browser",
+            "match": {
+              "location": "RegisterSteps.launch_the_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29011644580,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "open the Oxford Academy website",
+            "match": {
+              "location": "RegisterSteps.open_the_Oxford_Academy_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13871254245,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "register the details",
+            "match": {
+              "location": "RegisterSteps.register_the_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7467704608,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "close the browser",
+            "match": {
+              "location": "RegisterSteps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tc01_Oxford_Academy_register"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Logging into Oxford Academy",
+        "description": "",
+        "id": "oxford-academy-website;logging-into-oxford-academy;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5493154150,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user launch chrome",
+            "match": {
+              "location": "LoginSteps.the_user_launch_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18365304216,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user opens website",
+            "match": {
+              "location": "LoginSteps.the_user_opens_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8366231560,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user login using \"abcd@gmail.com\" and \"kg188754\" with vaild and invaild deatils",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd@gmail.com",
+                  "offset": 22
+                },
+                {
+                  "val": "kg188754",
+                  "offset": 43
+                }
+              ],
+              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5630216676,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user closes the browser",
+            "match": {
+              "location": "LoginSteps.the_user_closes_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Oxford_Academy_feature"
+          },
+          {
+            "line": 12,
+            "name": "@tc02_Oxford_Academy_login"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Logging into Oxford Academy",
+        "description": "",
+        "id": "oxford-academy-website;logging-into-oxford-academy;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4733212693,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user launch chrome",
+            "match": {
+              "location": "LoginSteps.the_user_launch_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23074566512,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user opens website",
+            "match": {
+              "location": "LoginSteps.the_user_opens_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6019538733,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user login using \"kg@gmail.com\" and \"gowtham895\" with vaild and invaild deatils",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kg@gmail.com",
+                  "offset": 22
+                },
+                {
+                  "val": "gowtham895",
+                  "offset": 41
+                }
+              ],
+              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5275332799,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user closes the browser",
+            "match": {
+              "location": "LoginSteps.the_user_closes_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Oxford_Academy_feature"
+          },
+          {
+            "line": 12,
+            "name": "@tc02_Oxford_Academy_login"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Logging into Oxford Academy",
+        "description": "",
+        "id": "oxford-academy-website;logging-into-oxford-academy;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4742108230,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user launch chrome",
+            "match": {
+              "location": "LoginSteps.the_user_launch_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15330779900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user opens website",
+            "match": {
+              "location": "LoginSteps.the_user_opens_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5856725369,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user login using \"gowtham19980303@gmail.com\" and \"Gowtham@98\" with vaild and invaild deatils",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gowtham19980303@gmail.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Gowtham@98",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6396764266,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user closes the browser",
+            "match": {
+              "location": "LoginSteps.the_user_closes_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Oxford_Academy_feature"
+          },
+          {
+            "line": 12,
+            "name": "@tc02_Oxford_Academy_login"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User editing the profile",
+        "description": "",
+        "id": "oxford-academy-website;user-editing-the-profile",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4242730980,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I launch the chrome",
+            "match": {
+              "location": "EditProfileSteps.i_launch_the_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32574172116,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I open the website and logs-in",
+            "match": {
+              "location": "EditProfileSteps.i_open_the_website_and_logs_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24515983303,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I open the edit personal details page",
+            "match": {
+              "location": "EditProfileSteps.i_open_the_edit_personal_details_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15382924850,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I edit and personal details and updates",
+            "match": {
+              "location": "EditProfileSteps.i_edit_and_personal_details_and_updates()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2265896984,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I closes the browser",
+            "match": {
+              "location": "EditProfileSteps.i_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@tc3_Oxford_Academy_Edit_profile"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "User deletes the saved search",
+        "description": "",
+        "id": "oxford-academy-website;user-deletes-the-saved-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4983084588,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The user should launch the chrome browser",
+            "match": {
+              "location": "DeleteSavedSearchSteps.the_user_should_launch_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28947503906,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user should open the website and logs in",
+            "match": {
+              "location": "DeleteSavedSearchSteps.user_should_open_the_website_and_logs_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20753915554,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user should open the saved search",
+            "match": {
+              "location": "DeleteSavedSearchSteps.user_should_open_the_saved_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3486357415,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user should delete the saved search",
+            "match": {
+              "location": "DeleteSavedSearchSteps.user_should_delete_the_saved_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2171117673,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user should close the browser",
+            "match": {
+              "location": "DeleteSavedSearchSteps.user_should_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@tc04_Oxford_Academy_Delete_saved_search"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "User checks if the search is saved",
+        "description": "",
+        "id": "oxford-academy-website;user-checks-if-the-search-is-saved",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4186720509,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "launching the browser",
+            "match": {
+              "location": "CountSubscriptionSteps.launching_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28590303868,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "opening the webpage and logs in",
+            "match": {
+              "location": "CountSubscriptionSteps.opening_the_webpage_and_logs_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16429168154,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user counts the subscription and prints",
+            "match": {
+              "location": "CountSubscriptionSteps.user_searches_a_journal_and_saves()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 484064347,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user closes the webpage",
+            "match": {
+              "location": "CountSubscriptionSteps.user_closes_the_webpage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 45,
+            "name": "@tc05_Oxford_Academy_count_subscription"
+          }
+        ]
+      }
+    ],
+    "name": "Oxford Academy Website",
+    "description": "",
+    "id": "oxford-academy-website",
+    "keyword": "Feature",
+    "uri": "src/main/resources/Feature/OxfordAcademy.Feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Oxford_Academy_feature"
+      }
+    ]
+  }
+]
