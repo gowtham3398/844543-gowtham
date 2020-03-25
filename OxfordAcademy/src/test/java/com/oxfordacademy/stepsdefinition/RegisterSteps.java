@@ -1,5 +1,7 @@
 package com.oxfordacademy.stepsdefinition;
 
+import org.openqa.selenium.WebDriver;
+
 //import com.excel.Excel;
 import com.oxfordacademy.pageobject.RegisterPage;
 
@@ -7,7 +9,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class RegisterSteps {
-RegisterPage enter = new RegisterPage();
+	WebDriver driver;
+RegisterPage enter = new RegisterPage(driver);
 //Excel ec1=new Excel();
 	@Given("^Launch the Chrome browser$")
 	public void launch_the_Chrome_browser() throws Throwable {
@@ -19,9 +22,9 @@ RegisterPage enter = new RegisterPage();
 		enter.oxfordHomepage();
 	}
 
-	@Then("^register the details$")
-	public void register_the_details() throws Throwable {
-		enter.registerDetails();
+	@Then("^register using \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" with vaild and invaild deatils$")
+	public void register_using_and_and_with_vaild_and_invaild_deatils(String emailId,String password,String confrimPassword) throws Throwable {
+		enter.registerDetails(emailId, password, confrimPassword);
 	}
 
 //	@Then("^login into the website$")

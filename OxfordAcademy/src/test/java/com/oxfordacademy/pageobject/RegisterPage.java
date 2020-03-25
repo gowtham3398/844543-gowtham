@@ -1,10 +1,16 @@
 package com.oxfordacademy.pageobject;
 
 	
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.codehaus.plexus.util.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,9 +22,14 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 		WebDriver driver;
 		By register=By.className("register");
 		By email=By.id("EmailAddress");
-		By password=By.name("Password");
+		By Password=By.name("Password");
 		By confirm_password=By.id("ConfirmPassword");
 		By submit=By.xpath("//*[@id=\"registerBtn\"]");
+		
+		public RegisterPage(WebDriver driver) 
+		{
+			this.driver=driver;
+		}
 
 		public void launchBrowser(String browser) //Launch url
 		{
@@ -57,22 +68,25 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 				System.out.println(driver.getTitle());
 			}
 			//Enter the details for valid registration
-			public void registerDetails() throws InterruptedException//Entering the details in the required field
+			public void registerDetails(String emailId,String password,String confrimPassword) throws InterruptedException, IOException
+			//Entering the details in the required field
 			{
 				driver.findElement(register).click();
-				driver.findElement(email).sendKeys("gowtham19980303@gmail.com");
-				
-				driver.findElement(password).sendKeys("Gowtham@98");
-			
-				driver.findElement(password).sendKeys(Keys.TAB);
-				driver.findElement(confirm_password).sendKeys("Gowtham@98");
-			
-				driver.findElement(confirm_password).sendKeys(Keys.TAB);
-			
-				driver.findElement(confirm_password).sendKeys(Keys.TAB);
-				
+				driver.findElement(email).sendKeys(emailId);
+				driver.findElement(Password).sendKeys(password);
+			    driver.findElement(Password).sendKeys(Keys.TAB);
+				driver.findElement(confirm_password).sendKeys(confrimPassword);
+			    driver.findElement(confirm_password).sendKeys(Keys.TAB);
+			    driver.findElement(confirm_password).sendKeys(Keys.TAB);
 				driver.findElement(submit).sendKeys(Keys.ENTER);
 
+				String getmessage = driver.findElement(By.xpath("//*[@id=\"main\"]/section/div/div/div[2]/div[1]")).getText();
+				String message="The email address is not valid. Please try again.";
+				Assert.assertEquals(getmessage, message);
+				
+				TakesScreenshot ts = (TakesScreenshot)driver;//Taking the screenshot
+				File source =ts.getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(source,new File("src/test/resources/screenshot/reg.png"));
 				
 			}
 			
@@ -85,3 +99,5 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 	}
 
+	//*[@id="main"]/section/div/div/div[2]/div[1]
+	//The email address is not valid. Please try again.

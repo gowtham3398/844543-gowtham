@@ -15,10 +15,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class LoginPage {
 	
 	WebDriver driver;
-	public LoginPage(WebDriver driver) 
-	{
-		this.driver=driver;
-	}
 		
 	public void launchBrowser(String browser) //Launch url
 	{

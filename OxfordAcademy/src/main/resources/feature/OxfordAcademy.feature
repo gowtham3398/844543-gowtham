@@ -1,28 +1,27 @@
 @Oxford_Academy_feature
 Feature: Oxford Academy Website
 
-@tc01_Oxford_Academy_register
-Scenario: Registering into Oxford Academy
+@tc01_Oxford_Academy_Register
+Scenario Outline: Registering into Oxford Academy
 
 Given Launch the Chrome browser
 Then open the Oxford Academy website
-Then register the details
+Then register using "<emailId>" and "<password>" and "<confrimPasswod>" with vaild and invaild deatils
 And close the browser
+Examples: 
+
+|emailId	                      |password  	|confrimPasswod|
+|abcd@gmail.com		              |kg188754		|kg188754	   |
+|kg@gmail.com	                  |gowtham895	|gowtham895    |
+|gowtham19980303@gmail.com		  |Gowtham@98	|Gowtham@98    |
 
 @tc02_Oxford_Academy_login
-Scenario Outline: Logging into Oxford Academy
+Scenario: Logging into Oxford Academy
 
 Given the user launch chrome
 Then the user opens website
-Then The user login using "<emailId>" and "<password>" with vaild and invaild deatils
+Then The user login using valid and invalid details
 Then the user closes the browser
-
-Examples: 
-
-|emailId	                      |password  	|
-|abcd@gmail.com		              |kg188754		|
-|kg@gmail.com	                  |gowtham895	|
-|gowtham19980303@gmail.com		  |Gowtham@98	|
 
 @tc3_Oxford_Academy_Edit_profile
 Scenario: User editing the profile
