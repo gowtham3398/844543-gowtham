@@ -3,16 +3,16 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
+        "line": 14,
         "name": "Registering into Oxford Academy",
         "description": "",
-        "id": "oxford-academy-website;registering-into-oxford-academy",
+        "id": "oxford-academy-website;registering-into-oxford-academy;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 16993767736,
+              "duration": 8958276703,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 29011644580,
+              "duration": 53642495158,
               "status": "passed"
             },
             "line": 8,
@@ -36,20 +36,39 @@
           },
           {
             "result": {
-              "duration": 13871254245,
-              "status": "passed"
+              "duration": 26806716267,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[The email address is not valid. Please try again.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.oxfordacademy.pageobject.RegisterPage.registerDetails(RegisterPage.java:85)\r\n\tat com.oxfordacademy.stepsdefinition.RegisterSteps.register_using_and_and_with_vaild_and_invaild_deatils(RegisterSteps.java:27)\r\n\tat ✽.Then register using \"abcd@gmail.com\" and \"kg188754\" and \"kg188754\" with vaild and invaild deatils(src/main/resources/Feature/OxfordAcademy.Feature:9)\r\n",
+              "status": "failed"
             },
             "line": 9,
-            "name": "register the details",
+            "name": "register using \"abcd@gmail.com\" and \"kg188754\" and \"kg188754\" with vaild and invaild deatils",
             "match": {
-              "location": "RegisterSteps.register_the_details()"
+              "arguments": [
+                {
+                  "val": "abcd@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "kg188754",
+                  "offset": 37
+                },
+                {
+                  "val": "kg188754",
+                  "offset": 52
+                }
+              ],
+              "location": "RegisterSteps.register_using_and_and_with_vaild_and_invaild_deatils(String,String,String)"
             },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7467704608,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "close the browser",
@@ -61,162 +80,89 @@
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@tc01_Oxford_Academy_register"
-          }
-        ]
-      },
-      {
-        "line": 23,
-        "name": "Logging into Oxford Academy",
-        "description": "",
-        "id": "oxford-academy-website;logging-into-oxford-academy;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5493154150,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user launch chrome",
-            "match": {
-              "location": "LoginSteps.the_user_launch_chrome()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 18365304216,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user opens website",
-            "match": {
-              "location": "LoginSteps.the_user_opens_website()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8366231560,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "The user login using \"abcd@gmail.com\" and \"kg188754\" with vaild and invaild deatils",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abcd@gmail.com",
-                  "offset": 22
-                },
-                {
-                  "val": "kg188754",
-                  "offset": 43
-                }
-              ],
-              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5630216676,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user closes the browser",
-            "match": {
-              "location": "LoginSteps.the_user_closes_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
             "line": 1,
             "name": "@Oxford_Academy_feature"
           },
           {
-            "line": 12,
-            "name": "@tc02_Oxford_Academy_login"
+            "line": 4,
+            "name": "@tc01_Oxford_Academy_Register"
           }
         ]
       },
       {
-        "line": 24,
-        "name": "Logging into Oxford Academy",
+        "line": 15,
+        "name": "Registering into Oxford Academy",
         "description": "",
-        "id": "oxford-academy-website;logging-into-oxford-academy;;3",
+        "id": "oxford-academy-website;registering-into-oxford-academy;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4733212693,
+              "duration": 20086598109,
               "status": "passed"
             },
-            "line": 15,
-            "name": "the user launch chrome",
+            "line": 7,
+            "name": "Launch the Chrome browser",
             "match": {
-              "location": "LoginSteps.the_user_launch_chrome()"
+              "location": "RegisterSteps.launch_the_Chrome_browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 23074566512,
+              "duration": 64390562390,
               "status": "passed"
             },
-            "line": 16,
-            "name": "the user opens website",
+            "line": 8,
+            "name": "open the Oxford Academy website",
             "match": {
-              "location": "LoginSteps.the_user_opens_website()"
+              "location": "RegisterSteps.open_the_Oxford_Academy_website()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6019538733,
-              "status": "passed"
+              "duration": 7852154818,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[The email address is not valid. Please try again.]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.oxfordacademy.pageobject.RegisterPage.registerDetails(RegisterPage.java:85)\r\n\tat com.oxfordacademy.stepsdefinition.RegisterSteps.register_using_and_and_with_vaild_and_invaild_deatils(RegisterSteps.java:27)\r\n\tat ✽.Then register using \"kg@gmail.com\" and \"gowtham895\" and \"gowtham895\" with vaild and invaild deatils(src/main/resources/Feature/OxfordAcademy.Feature:9)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "The user login using \"kg@gmail.com\" and \"gowtham895\" with vaild and invaild deatils",
+            "line": 9,
+            "name": "register using \"kg@gmail.com\" and \"gowtham895\" and \"gowtham895\" with vaild and invaild deatils",
             "match": {
               "arguments": [
                 {
                   "val": "kg@gmail.com",
-                  "offset": 22
+                  "offset": 16
                 },
                 {
                   "val": "gowtham895",
-                  "offset": 41
+                  "offset": 35
+                },
+                {
+                  "val": "gowtham895",
+                  "offset": 52
                 }
               ],
-              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
+              "location": "RegisterSteps.register_using_and_and_with_vaild_and_invaild_deatils(String,String,String)"
             },
             "matchedColumns": [
               0,
-              1
+              1,
+              2
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5275332799,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 18,
-            "name": "the user closes the browser",
+            "line": 10,
+            "name": "close the browser",
             "match": {
-              "location": "LoginSteps.the_user_closes_the_browser()"
+              "location": "RegisterSteps.close_the_browser()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -225,25 +171,111 @@
             "name": "@Oxford_Academy_feature"
           },
           {
-            "line": 12,
-            "name": "@tc02_Oxford_Academy_login"
+            "line": 4,
+            "name": "@tc01_Oxford_Academy_Register"
           }
         ]
       },
       {
-        "line": 25,
-        "name": "Logging into Oxford Academy",
+        "line": 16,
+        "name": "Registering into Oxford Academy",
         "description": "",
-        "id": "oxford-academy-website;logging-into-oxford-academy;;4",
+        "id": "oxford-academy-website;registering-into-oxford-academy;;4",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4742108230,
+              "duration": 65746814397,
               "status": "passed"
             },
-            "line": 15,
+            "line": 7,
+            "name": "Launch the Chrome browser",
+            "match": {
+              "location": "RegisterSteps.launch_the_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 740045,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.oxfordacademy.pageobject.RegisterPage.oxfordHomepage(RegisterPage.java:67)\r\n\tat com.oxfordacademy.stepsdefinition.RegisterSteps.open_the_Oxford_Academy_website(RegisterSteps.java:22)\r\n\tat ✽.Then open the Oxford Academy website(src/main/resources/Feature/OxfordAcademy.Feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "open the Oxford Academy website",
+            "match": {
+              "location": "RegisterSteps.open_the_Oxford_Academy_website()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "register using \"gowtham19980303@gmail.com\" and \"Gowtham@98\" and \"Gowtham@98\" with vaild and invaild deatils",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gowtham19980303@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "Gowtham@98",
+                  "offset": 48
+                },
+                {
+                  "val": "Gowtham@98",
+                  "offset": 65
+                }
+              ],
+              "location": "RegisterSteps.register_using_and_and_with_vaild_and_invaild_deatils(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "close the browser",
+            "match": {
+              "location": "RegisterSteps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Oxford_Academy_feature"
+          },
+          {
+            "line": 4,
+            "name": "@tc01_Oxford_Academy_Register"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Logging into Oxford Academy",
+        "description": "",
+        "id": "oxford-academy-website;logging-into-oxford-academy",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63372078490,
+              "status": "passed"
+            },
+            "line": 21,
             "name": "the user launch chrome",
             "match": {
               "location": "LoginSteps.the_user_launch_chrome()"
@@ -252,10 +284,11 @@
           },
           {
             "result": {
-              "duration": 15330779900,
-              "status": "passed"
+              "duration": 823249,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.oxfordacademy.pageobject.LoginPage.oxfordHomepage(LoginPage.java:52)\r\n\tat com.oxfordacademy.stepsdefinition.LoginSteps.the_user_opens_website(LoginSteps.java:26)\r\n\tat ✽.Then the user opens website(src/main/resources/Feature/OxfordAcademy.Feature:22)\r\n",
+              "status": "failed"
             },
-            "line": 16,
+            "line": 22,
             "name": "the user opens website",
             "match": {
               "location": "LoginSteps.the_user_opens_website()"
@@ -264,36 +297,20 @@
           },
           {
             "result": {
-              "duration": 5856725369,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 17,
-            "name": "The user login using \"gowtham19980303@gmail.com\" and \"Gowtham@98\" with vaild and invaild deatils",
+            "line": 23,
+            "name": "The user login using valid and invalid details",
             "match": {
-              "arguments": [
-                {
-                  "val": "gowtham19980303@gmail.com",
-                  "offset": 22
-                },
-                {
-                  "val": "Gowtham@98",
-                  "offset": 54
-                }
-              ],
-              "location": "LoginSteps.the_user_login_using_and_with_vaild_and_invaild_deatils(String,String)"
+              "location": "LoginSteps.the_user_login_using_valid_and_invalid_details()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6396764266,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 18,
+            "line": 24,
             "name": "the user closes the browser",
             "match": {
               "location": "LoginSteps.the_user_closes_the_browser()"
@@ -303,17 +320,13 @@
         ],
         "tags": [
           {
-            "line": 1,
-            "name": "@Oxford_Academy_feature"
-          },
-          {
-            "line": 12,
+            "line": 18,
             "name": "@tc02_Oxford_Academy_login"
           }
         ]
       },
       {
-        "line": 28,
+        "line": 27,
         "name": "User editing the profile",
         "description": "",
         "id": "oxford-academy-website;user-editing-the-profile",
@@ -322,10 +335,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4242730980,
+              "duration": 16244110795,
               "status": "passed"
             },
-            "line": 30,
+            "line": 29,
             "name": "I launch the chrome",
             "match": {
               "location": "EditProfileSteps.i_launch_the_chrome()"
@@ -334,10 +347,10 @@
           },
           {
             "result": {
-              "duration": 32574172116,
+              "duration": 62908129207,
               "status": "passed"
             },
-            "line": 31,
+            "line": 30,
             "name": "I open the website and logs-in",
             "match": {
               "location": "EditProfileSteps.i_open_the_website_and_logs_in()"
@@ -346,10 +359,10 @@
           },
           {
             "result": {
-              "duration": 24515983303,
+              "duration": 44494195100,
               "status": "passed"
             },
-            "line": 32,
+            "line": 31,
             "name": "I open the edit personal details page",
             "match": {
               "location": "EditProfileSteps.i_open_the_edit_personal_details_page()"
@@ -358,10 +371,10 @@
           },
           {
             "result": {
-              "duration": 15382924850,
+              "duration": 50599952643,
               "status": "passed"
             },
-            "line": 33,
+            "line": 32,
             "name": "I edit and personal details and updates",
             "match": {
               "location": "EditProfileSteps.i_edit_and_personal_details_and_updates()"
@@ -370,10 +383,10 @@
           },
           {
             "result": {
-              "duration": 2265896984,
+              "duration": 911807073,
               "status": "passed"
             },
-            "line": 34,
+            "line": 33,
             "name": "I closes the browser",
             "match": {
               "location": "EditProfileSteps.i_closes_the_browser()"
@@ -383,13 +396,13 @@
         ],
         "tags": [
           {
-            "line": 27,
+            "line": 26,
             "name": "@tc3_Oxford_Academy_Edit_profile"
           }
         ]
       },
       {
-        "line": 37,
+        "line": 36,
         "name": "User deletes the saved search",
         "description": "",
         "id": "oxford-academy-website;user-deletes-the-saved-search",
@@ -398,10 +411,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4983084588,
+              "duration": 6317498054,
               "status": "passed"
             },
-            "line": 39,
+            "line": 38,
             "name": "The user should launch the chrome browser",
             "match": {
               "location": "DeleteSavedSearchSteps.the_user_should_launch_the_chrome_browser()"
@@ -410,10 +423,10 @@
           },
           {
             "result": {
-              "duration": 28947503906,
+              "duration": 104566511693,
               "status": "passed"
             },
-            "line": 40,
+            "line": 39,
             "name": "user should open the website and logs in",
             "match": {
               "location": "DeleteSavedSearchSteps.user_should_open_the_website_and_logs_in()"
@@ -422,10 +435,10 @@
           },
           {
             "result": {
-              "duration": 20753915554,
+              "duration": 14805948731,
               "status": "passed"
             },
-            "line": 41,
+            "line": 40,
             "name": "user should open the saved search",
             "match": {
               "location": "DeleteSavedSearchSteps.user_should_open_the_saved_search()"
@@ -434,10 +447,10 @@
           },
           {
             "result": {
-              "duration": 3486357415,
+              "duration": 2222153557,
               "status": "passed"
             },
-            "line": 42,
+            "line": 41,
             "name": "user should delete the saved search",
             "match": {
               "location": "DeleteSavedSearchSteps.user_should_delete_the_saved_search()"
@@ -446,10 +459,10 @@
           },
           {
             "result": {
-              "duration": 2171117673,
+              "duration": 2425414887,
               "status": "passed"
             },
-            "line": 43,
+            "line": 42,
             "name": "user should close the browser",
             "match": {
               "location": "DeleteSavedSearchSteps.user_should_close_the_browser()"
@@ -459,13 +472,13 @@
         ],
         "tags": [
           {
-            "line": 36,
+            "line": 35,
             "name": "@tc04_Oxford_Academy_Delete_saved_search"
           }
         ]
       },
       {
-        "line": 46,
+        "line": 45,
         "name": "User checks if the search is saved",
         "description": "",
         "id": "oxford-academy-website;user-checks-if-the-search-is-saved",
@@ -474,10 +487,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4186720509,
+              "duration": 62482117592,
               "status": "passed"
             },
-            "line": 48,
+            "line": 47,
             "name": "launching the browser",
             "match": {
               "location": "CountSubscriptionSteps.launching_the_browser()"
@@ -486,10 +499,11 @@
           },
           {
             "result": {
-              "duration": 28590303868,
-              "status": "passed"
+              "duration": 731248,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.oxfordacademy.pageobject.CountSubscriptionPage.oxfordHomepage(CountSubscriptionPage.java:57)\r\n\tat com.oxfordacademy.stepsdefinition.CountSubscriptionSteps.opening_the_webpage_and_logs_in(CountSubscriptionSteps.java:20)\r\n\tat ✽.When opening the webpage and logs in(src/main/resources/Feature/OxfordAcademy.Feature:48)\r\n",
+              "status": "failed"
             },
-            "line": 49,
+            "line": 48,
             "name": "opening the webpage and logs in",
             "match": {
               "location": "CountSubscriptionSteps.opening_the_webpage_and_logs_in()"
@@ -498,10 +512,9 @@
           },
           {
             "result": {
-              "duration": 16429168154,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 50,
+            "line": 49,
             "name": "user counts the subscription and prints",
             "match": {
               "location": "CountSubscriptionSteps.user_searches_a_journal_and_saves()"
@@ -510,10 +523,9 @@
           },
           {
             "result": {
-              "duration": 484064347,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 51,
+            "line": 50,
             "name": "user closes the webpage",
             "match": {
               "location": "CountSubscriptionSteps.user_closes_the_webpage()"
@@ -523,7 +535,7 @@
         ],
         "tags": [
           {
-            "line": 45,
+            "line": 44,
             "name": "@tc05_Oxford_Academy_count_subscription"
           }
         ]
